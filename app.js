@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
 
+app.get('/new', (req, res) => {
+    res.sendFile(__dirname + '/views/newWeb.html');
+});
+
 app.use(express.static('public'));
 
 module.exports = app;
